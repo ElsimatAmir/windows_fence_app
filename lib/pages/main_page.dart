@@ -14,6 +14,7 @@ class _MainPageState extends State<MainPage> {
   Widget build(BuildContext context) {
     int screeenNumber = 0;
     List<Widget> screens = [CalculaterSreen(), const HistoryScreen()];
+
     return SafeArea(
       child: Row(mainAxisAlignment: MainAxisAlignment.start, children: [
         Expanded(
@@ -77,7 +78,7 @@ class _MainPageState extends State<MainPage> {
               ],
             )),
         Expanded(
-          flex: 2,
+          flex: 4,
           child: screens[screeenNumber],
         )
       ]),
